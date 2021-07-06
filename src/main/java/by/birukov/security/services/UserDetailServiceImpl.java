@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import static java.util.Collections.EMPTY_LIST;
 @Service
 public class UserDetailServiceImpl implements UserDetailsService {
 
@@ -26,8 +26,10 @@ public class UserDetailServiceImpl implements UserDetailsService {
             throw new UsernameNotFoundException(username);
         }
 
-        List<String > em = new ArrayList<>();
-
-        return new MyUserDetails(user);
+//        return new MyUserDetails(user);
+        return new org.springframework.security.core.userdetails.User(
+                user.getUsername(),
+                user.getPassword()
+                ,EMPTY_LIST);
     }
 }

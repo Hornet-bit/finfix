@@ -17,12 +17,14 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+//    @CrossOrigin(origins = "*", allowedHeaders = "*", originPatterns = "*")
     @PostMapping("/sing-up")
     public void singUp(@RequestBody User user){
-//        user.setPassword(bCrypt.encode(user.getPassword()));
-        String encodedPassword = bCrypt.encode("abc");
+        user.setPassword(bCrypt.encode(user.getPassword()));
+        userService.save(user);
+
+        String encodedPassword = bCrypt.encode(user.getPassword());
         System.out.println(encodedPassword);
-//        userService.save(user);
     }
 
 

@@ -33,6 +33,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 //403 - пользователь аутентифицирован, но не авторизован
         try {
             User creds = new ObjectMapper().readValue(request.getInputStream(), User.class);
+
             return authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(creds.getUsername(), creds.getPassword())
             );
@@ -48,10 +49,11 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                                             FilterChain chain,
                                             Authentication auth) throws IOException, ServletException {
         String token = JWT.create()
-                .withSubject(((MyUserDetails)auth.getPrincipal()).getUsername())
+                .withSubject(((org.springframework.security.core.userdetails.User)auth.getPrincipal()).getUsername())
                 .withExpiresAt(new Date(System.currentTimeMillis()+ SecurityConstants.ExpirationTime))
                 .sign(Algorithm.HMAC512(SecurityConstants.SECRET.getBytes(StandardCharsets.UTF_8)));
         response.addHeader(SecurityConstants.HEADER, SecurityConstants.TOKEN_PREFIX+token);
+//        auth.setAuthenticated(true);
 //        chain.doFilter(request, response);
     }
 }

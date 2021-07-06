@@ -1,3 +1,25 @@
 databaseChangeLog:
   - include:
       file: db.changelog/ddl/users.xml
+  - include:
+      file: db.changelog/ddl/fanfix.xml
+  - include:
+      file: db.changelog/ddl/comments.xml
+  - include:
+      file: db.changelog/ddl/likes.xml
+  - include:
+      file: db.changelog/ddl/rating.xml
+  - include:
+      file: db.changelog/ddl/fandom.xml
+  - include:
+      file: db.changelog/ddl/foreign_key.xml
+
+  #      dml
+  - include:
+      file: db.changelog/dml/add_fandom.xml
+
+  - include:
+      file: db.changelog/dml/add_users.xml
+
+  - include:
+      file: db.changelog/dml/add_fanfix.xml

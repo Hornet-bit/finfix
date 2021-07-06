@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <property name="now" value="UNIX_TIMESTAMP()" dbms="mysql"/>
+    <changeSet id="add_fanfix" author="birukov">
+
+        <insert tableName="fanfix">
+<!--            <column name="date" value="01.01.2016"/>-->
+            <column name="title" value="Последний из Могикан"/>
+            <column name="description" value="Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации."/>
+            <column name="author_id" value="2"/>
+            <column name="picture" value="pic"/>
+            <column name="fandom_id" value="5"/>
+            <column name="tags" value="there will be tags"/>
+        </insert>
+
+        <insert tableName="fanfix">
+            <!--            <column name="date" value="01.01.2016"/>-->
+            <column name="title" value="Небезызвестный мотив"/>
+            <column name="description" value="Не следует, однако забывать, что новая модель организационной деятельности позволяет выполнять важные задания по разработке направлений прогрессивного развития."/>
+            <column name="author_id" value="4"/>
+            <column name="picture" value="pic"/>
+            <column name="fandom_id" value="4"/>
+            <column name="tags" value="there will be tags"/>
+        </insert>
+
+        <insert tableName="fanfix">
+            <!--            <column name="date" value="01.01.2016"/>-->
+            <column name="title" value="Широкий смысл"/>
+            <column name="description" value="Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации новых предложений. С другой стороны консультация с широким активом"/>
+            <column name="author_id" value="1"/>
+            <column name="picture" value="pic"/>
+            <column name="fandom_id" value="1"/>
+            <column name="tags" value="there will be tags"/>
+        </insert>
+
+        <insert tableName="fanfix">
+            <!--            <column name="date" value="01.01.2016"/>-->
+            <column name="title" value="Доподлинно неизвестно"/>
+            <column name="description" value="Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание позиций, занимаемых "/>
+            <column name="author_id" value="5"/>
+            <column name="picture" value="pic"/>
+            <column name="fandom_id" value="2"/>
+            <column name="tags" value="there will be tags"/>
+        </insert>
+
+
+        <insert tableName="fanfix">
+            <!--            <column name="date" value="01.01.2016"/>-->
+            <column name="title" value="Место обучения кадров"/>
+            <column name="description" value="Таким образом реализация намеченных плановых заданий играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям."/>
+            <column name="author_id" value="2"/>
+            <column name="picture" value="pic"/>
+            <column name="fandom_id" value="3"/>
+            <column name="tags" value="there will be tags"/>
+        </insert>
+
+        <insert tableName="fanfix">
+            <!--            <column name="date" value="01.01.2016"/>-->
+            <column name="title" value="Процесс внедрения и модернизации"/>
+            <column name="description" value="укрепление и развитие структуры позволяет оценить значение дальнейших направлений развития. Таким образом дальнейшее развитие различных форм деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт консультация с широким активом требуют от нас анализа систем массового участия."/>
+            <column name="author_id" value="1"/>
+            <column name="picture" value="pic"/>
+            <column name="fandom_id" value="7"/>
+            <column name="tags" value="there will be tags"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

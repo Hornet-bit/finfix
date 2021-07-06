@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="add_users" author="birukov">
+
+        <insert tableName="users">
+            <column name="email" value="jiratt@gmail.com"/>
+            <column name="username" value="Fibrod"/>
+            <column name="password" value="$2a$10$yIcqtkFnjFzMfCj8bcyC0ulF959LAighMcLGGoZ0R/9R3asrfw3Ca"/>
+<!--            Pimpim-->
+            <column name="avatar" value="pic"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="email" value="haksli@hax.li"/>
+            <column name="username" value="SoldierOfFortune"/>
+            <column name="password" value="$2a$10$gINMIhaMsO4yByUHvmTBuO/4wbb74ENkIzciU4EAaYvWi8P.c.eJ."/>
+            <!--            hiphop-->
+            <column name="avatar" value="pic"/>
+        </insert>
+
+
+        <insert tableName="users">
+            <column name="email" value="Oryell@rem.org"/>
+            <column name="username" value="Vernand"/>
+            <column name="password" value="$2a$10$t3j44rEQtsVAD/Bkrn16EulDuVzAa.MJey00wsqaLgNtlR06ly0j2"/>
+            <!--            Revmat-->
+            <column name="avatar" value="pic"/>
+        </insert>
+
+
+        <insert tableName="users">
+            <column name="email" value="Bomj@redat.by"/>
+            <column name="username" value="Zamyatin"/>
+            <column name="password" value="$2a$10$UdzPnXVv2UNiloxoxwrAk.8BA.OoP0GezF44bwIVsrNFcXfmMA5wG"/>
+            <!--            Yaya234-->
+            <column name="avatar" value="pic"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="email" value="Jafar@gmail.com"/>
+            <column name="username" value="JafarCHik"/>
+            <column name="password" value="$2a$10$48S4KjCXtIhYek0MJVRV3.MJFL8o19ktmsjByFM2VNz/wZwlwDntq"/>
+            <!--            Mingoz-->
+            <column name="avatar" value="pic"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="email" value="Mao@mao.mao"/>
+            <column name="username" value="MaoDZE"/>
+            <column name="password" value="$2a$10$E8nEabaUE/6kQGuHWsTel.zbJ5AvaZzWpO5gYwIemfhI9NnlzDw2."/>
+            <!--            Maotut  -->
+            <column name="avatar" value="pic"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="add_fandoms" author="birukov">
+
+        <insert tableName="fandoms">
+            <column name="fandom" value="Harry Potter"/>
+        </insert>
+
+        <insert tableName="fandoms">
+            <column name="fandom" value="Alice in wonderland"/>
+        </insert>
+
+        <insert tableName="fandoms">
+            <column name="fandom" value="The Girl With the Dragon Tattoo"/>
+        </insert>
+
+        <insert tableName="fandoms">
+            <column name="fandom" value="Underland"/>
+        </insert>
+
+        <insert tableName="fandoms">
+            <column name="fandom" value="Normal People"/>
+        </insert>
+
+        <insert tableName="fandoms">
+            <column name="fandom" value="Behind the back"/>
+        </insert>
+
+        <insert tableName="fandoms">
+            <column name="fandom" value="Vizitedd"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
