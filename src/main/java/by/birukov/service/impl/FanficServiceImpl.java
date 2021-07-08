@@ -26,6 +26,7 @@ public class FanficServiceImpl {
         for (Fanfic entityFanfic:
                 entities) {
             FanficDto dto = new FanficDto();
+            dto.setId(entityFanfic.getId());
             dto.setFandom(entityFanfic.getFandom().getFandom());
             dto.setAuthor(entityFanfic.getAuthor().getUsername());
             dto.setTitle(entityFanfic.getTitle());

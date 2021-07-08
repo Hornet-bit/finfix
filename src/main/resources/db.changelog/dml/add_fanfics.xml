@@ -6,7 +6,7 @@
     <property name="now" value="UNIX_TIMESTAMP()" dbms="mysql"/>
     <changeSet id="add_fanfix" author="birukov">
 
-        <insert tableName="fanfix">
+        <insert tableName="fanfics">
 <!--            <column name="date" value="01.01.2016"/>-->
             <column name="title" value="Последний из Могикан"/>
             <column name="description" value="Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации."/>
@@ -16,7 +16,7 @@
             <column name="tags" value="there will be tags"/>
         </insert>
 
-        <insert tableName="fanfix">
+        <insert tableName="fanfics">
             <!--            <column name="date" value="01.01.2016"/>-->
             <column name="title" value="Небезызвестный мотив"/>
             <column name="description" value="Не следует, однако забывать, что новая модель организационной деятельности позволяет выполнять важные задания по разработке направлений прогрессивного развития."/>
@@ -26,7 +26,7 @@
             <column name="tags" value="there will be tags"/>
         </insert>
 
-        <insert tableName="fanfix">
+        <insert tableName="fanfics">
             <!--            <column name="date" value="01.01.2016"/>-->
             <column name="title" value="Широкий смысл"/>
             <column name="description" value="Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации новых предложений. С другой стороны консультация с широким активом"/>
@@ -36,7 +36,7 @@
             <column name="tags" value="there will be tags"/>
         </insert>
 
-        <insert tableName="fanfix">
+        <insert tableName="fanfics">
             <!--            <column name="date" value="01.01.2016"/>-->
             <column name="title" value="Доподлинно неизвестно"/>
             <column name="description" value="Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание позиций, занимаемых "/>
@@ -47,7 +47,7 @@
         </insert>
 
 
-        <insert tableName="fanfix">
+        <insert tableName="fanfics">
             <!--            <column name="date" value="01.01.2016"/>-->
             <column name="title" value="Место обучения кадров"/>
             <column name="description" value="Таким образом реализация намеченных плановых заданий играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям."/>
@@ -57,7 +57,7 @@
             <column name="tags" value="there will be tags"/>
         </insert>
 
-        <insert tableName="fanfix">
+        <insert tableName="fanfics">
             <!--            <column name="date" value="01.01.2016"/>-->
             <column name="title" value="Процесс внедрения и модернизации"/>
             <column name="description" value="укрепление и развитие структуры позволяет оценить значение дальнейших направлений развития. Таким образом дальнейшее развитие различных форм деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт консультация с широким активом требуют от нас анализа систем массового участия."/>

@@ -4,8 +4,8 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-    <changeSet id="create_fanfix" author="birukov">
-        <createTable tableName="fanfix">
+    <changeSet id="create_fanfics_preview" author="birukov">
+        <createTable tableName="fanfics">
             <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -21,7 +21,7 @@
             <column name="description" type="varchar(500)">
                 <constraints nullable="true"/>
             </column>
-
+<!--fanfix-->
             <column name="author_id" type="int">
                 <constraints nullable="true"/>
             </column>

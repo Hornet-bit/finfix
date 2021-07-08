@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Data
-@Entity(name = "fanfix")
+@Entity(name = "fanfics")
 public class Fanfic {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

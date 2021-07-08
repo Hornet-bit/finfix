@@ -5,13 +5,14 @@
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <changeSet id="create_fk_between" author="birukov">
-        <addForeignKeyConstraint baseTableName="fanfix"
+
+        <addForeignKeyConstraint baseTableName="fanfics"
                                  baseColumnNames="fandom_id"
                                  constraintName="FK_fanfix_fandom"
                                  referencedTableName="fandoms"
                                  referencedColumnNames="id"/>
 
-        <addForeignKeyConstraint baseTableName="fanfix"
+        <addForeignKeyConstraint baseTableName="fanfics"
                                  baseColumnNames="author_id"
                                  constraintName="FK_fanfix_author"
                                  referencedTableName="users"
@@ -26,13 +27,13 @@
         <addForeignKeyConstraint baseTableName="comments"
                                  baseColumnNames="finfik_id"
                                  constraintName="FK_comments_fanfix"
-                                 referencedTableName="fanfix"
+                                 referencedTableName="fanfics"
                                  referencedColumnNames="id"/>
 
         <addForeignKeyConstraint baseTableName="likes"
                                  baseColumnNames="finfik_id"
                                  constraintName="FK_likes_fanfix"
-                                 referencedTableName="fanfix"
+                                 referencedTableName="fanfics"
                                  referencedColumnNames="id"/>
 
         <addForeignKeyConstraint baseTableName="likes"
@@ -47,13 +48,19 @@
         <addForeignKeyConstraint baseTableName="ratings"
                                  baseColumnNames="finfik_id"
                                  constraintName="FK_rating_fanfix"
-                                 referencedTableName="fanfix"
+                                 referencedTableName="fanfics"
                                  referencedColumnNames="id"/>
 
         <addForeignKeyConstraint baseTableName="ratings"
                                  baseColumnNames="user_id"
                                  constraintName="FK_rating_users"
                                  referencedTableName="users"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="fanfics_chapters"
+                                 baseColumnNames="fanfic_id"
+                                 constraintName="FK_chapter_fanfics"
+                                 referencedTableName="fanfics"
                                  referencedColumnNames="id"/>
     </changeSet>
 </databaseChangeLog>
