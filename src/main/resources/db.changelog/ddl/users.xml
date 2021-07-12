@@ -22,7 +22,9 @@
                 <constraints nullable="false"/>
             </column>
 
-            <column name="avatar" type="varchar(500)"/>
+            <column name="avatar" type="varchar(500)"
+                    defaultValue="https://res.cloudinary.com/dvon7tu7i/image/upload/v1626015600/hfwbvapjqavpchzgt9dk.jpg"/>
+
         </createTable>
     </changeSet>
 </databaseChangeLog>

@@ -6,6 +6,7 @@ import by.birukov.service.impl.FanficServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -25,5 +26,10 @@ public class FanficController {
     @GetMapping("/fanfics")
     public List<FanficDto> findAllFanfics(){
         return fanficService.findAll();
+    }
+
+    @PostMapping("/fanfics/new")
+    public void createFanfic(){
+
     }
 }

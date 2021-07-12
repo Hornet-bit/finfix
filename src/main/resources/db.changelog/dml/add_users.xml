@@ -10,8 +10,8 @@
             <column name="email" value="jiratt@gmail.com"/>
             <column name="username" value="Fibrod"/>
             <column name="password" value="$2a$10$yIcqtkFnjFzMfCj8bcyC0ulF959LAighMcLGGoZ0R/9R3asrfw3Ca"/>
-<!--            Pimpim-->
-            <column name="avatar" value="pic"/>
+<!--            pimpim-->
+            <column name="avatar" value="https://res.cloudinary.com/dvon7tu7i/image/upload/v1625835606/sample_woman.ico"/>
         </insert>
 
         <insert tableName="users">
@@ -19,7 +19,7 @@
             <column name="username" value="SoldierOfFortune"/>
             <column name="password" value="$2a$10$gINMIhaMsO4yByUHvmTBuO/4wbb74ENkIzciU4EAaYvWi8P.c.eJ."/>
             <!--            hiphop-->
-            <column name="avatar" value="pic"/>
+            <column name="avatar" value="https://res.cloudinary.com/dvon7tu7i/image/upload/v1625056851/sample.jpg"/>
         </insert>
 
 
@@ -28,7 +28,7 @@
             <column name="username" value="Vernand"/>
             <column name="password" value="$2a$10$t3j44rEQtsVAD/Bkrn16EulDuVzAa.MJey00wsqaLgNtlR06ly0j2"/>
             <!--            Revmat-->
-            <column name="avatar" value="pic"/>
+<!--            <column name="avatar" value="pic"/>-->
         </insert>
 
 
@@ -37,7 +37,7 @@
             <column name="username" value="Zamyatin"/>
             <column name="password" value="$2a$10$UdzPnXVv2UNiloxoxwrAk.8BA.OoP0GezF44bwIVsrNFcXfmMA5wG"/>
             <!--            Yaya234-->
-            <column name="avatar" value="pic"/>
+<!--            <column name="avatar" value="pic"/>-->
         </insert>
 
         <insert tableName="users">
@@ -45,7 +45,7 @@
             <column name="username" value="JafarCHik"/>
             <column name="password" value="$2a$10$48S4KjCXtIhYek0MJVRV3.MJFL8o19ktmsjByFM2VNz/wZwlwDntq"/>
             <!--            Mingoz-->
-            <column name="avatar" value="pic"/>
+<!--            <column name="avatar" value="pic"/>-->
         </insert>
 
         <insert tableName="users">
@@ -53,7 +53,7 @@
             <column name="username" value="MaoDZE"/>
             <column name="password" value="$2a$10$E8nEabaUE/6kQGuHWsTel.zbJ5AvaZzWpO5gYwIemfhI9NnlzDw2."/>
             <!--            Maotut  -->
-            <column name="avatar" value="pic"/>
+<!--            <column name="avatar" value="pic"/>-->
         </insert>
 
     </changeSet>

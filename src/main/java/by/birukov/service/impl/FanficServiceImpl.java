@@ -30,8 +30,9 @@ public class FanficServiceImpl {
             dto.setFandom(entityFanfic.getFandom().getFandom());
             dto.setAuthor(entityFanfic.getAuthor().getUsername());
             dto.setTitle(entityFanfic.getTitle());
-            dto.setDate(entityFanfic.getDate().toString());
+            dto.setDate(entityFanfic.getDate());
             dto.setDescription(entityFanfic.getDescription());
+            dto.setAuthorAvatar(entityFanfic.getAuthor().getAvatar());
             dtos.add(dto);
         }
         return dtos;

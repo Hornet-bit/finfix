@@ -28,11 +28,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebM
 
     private PasswordEncoder bCryptPasswordEncoder;
 
-//    public SecurityConfig(UserDetailServiceImpl userDetailService, PasswordEncoder bCryptPasswordEncoder) {
-//        this.userDetailService = userDetailService;
-//        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
-//    }
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -51,12 +46,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebM
     }
 
 
-
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:4200")
-                .allowedMethods("*");
+                .allowedOrigins("*")
+                .allowedMethods("*")
+                .allowedHeaders("*")
+        .exposedHeaders("Authorization");
     }
 
     @Bean

@@ -62,5 +62,17 @@
                                  constraintName="FK_chapter_fanfics"
                                  referencedTableName="fanfics"
                                  referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="users_fandoms"
+                                 baseColumnNames="fandom_id"
+                                 constraintName="FK_users-fandoms_fanfics"
+                                 referencedTableName="fandoms"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="users_fandoms"
+                                 baseColumnNames="user_id"
+                                 constraintName="FK_users-fandoms_users"
+                                 referencedTableName="users"
+                                 referencedColumnNames="id"/>
     </changeSet>
 </databaseChangeLog>

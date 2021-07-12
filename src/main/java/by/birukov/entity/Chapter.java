@@ -13,6 +13,7 @@ public class Chapter {
 
     private String title;
     private String text;
+    private String picture;
 
     @Column(name = "chapter_number")
     private int chapterNumber;

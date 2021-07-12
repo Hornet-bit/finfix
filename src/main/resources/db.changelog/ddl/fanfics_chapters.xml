@@ -11,7 +11,7 @@
                 <constraints primaryKey="true" nullable="false"/>
             </column>
 
-                <column name="title" type="varchar(200)">
+            <column name="title" type="varchar(200)">
                 <constraints nullable="false"/>
             </column>
 
@@ -25,6 +25,9 @@
 
             <column name="fanfic_id" type="int">
                 <constraints nullable="false"/>
+            </column>
+
+            <column name="picture" type="varchar(500)">
             </column>
 
         </createTable>
